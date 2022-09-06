@@ -114,6 +114,10 @@ select{
     width: 300px;
     transition: transform 0.3s;
 }
+.imgs:hover {
+    transform: scale(1.1);
+    box-shadow: #8400cd 0px 20px 30px -10px;
+}
 /* PESTAÑA CONTACTO */
 
 /* Titulos y subtitulos */
@@ -541,9 +545,10 @@ select{
     width: 350px;
     left: 0;
 }
+
 .desplegable:hover{
     text-decoration: underline;
-    box-shadow: #8400cd 1.95px 1.95px 2.6px;
+    box-shadow: #8400cd 1.95px 0px 0px;
 }
 .categorias{
     position: absolute;
