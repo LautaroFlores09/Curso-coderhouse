@@ -1,0 +1,878 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family:Rotunda ;
+    src: url("../assets/ttf/Fontspring-DEMO-4a-rotunda-regular.otf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Rotunda;
+    src: url("../assets/ttf/Fontspring-DEMO-3a-rotunda-light.otf");
+    font-style: light;
+}
+@font-face {
+    font-family: Rotunda1;
+    src: url("../assets/ttf/Fontspring-DEMO-6a-rotunda-bold.otf");
+    font-style: bold;
+}
+@font-face {
+    font-family: Draco;
+    src: url("../assets/ttf/Draco.otf");
+    font-style: normal;
+}
+
+ul{
+    list-style-type: none;
+}
+select{
+    border: none;
+}
+
+
+.header{
+    border-bottom: 2px solid #8400cd;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+
+
+
+
+
+/***NAVBAR ***/
+/* LOGO */
+.header__logo{
+    padding: 5px;
+    margin-left: 50px;
+}
+.header__logo-img{
+    margin-left: 30px;
+}
+.header__logo-nombre{
+    color: #8400cd;
+    font-family: Draco;
+    font-size: 9px;
+    margin-bottom: 20px;
+}
+
+/* MENU */
+.menu{
+   display: flex;
+   align-items: center;
+   max-width: 1200px;
+   margin: 0 200px;
+}
+.header__menu{
+    display: flex;
+    list-style-type: none;
+}
+.header__menu-item{
+    margin: 0 5px 0 5px;
+    font-family: Rotunda;
+    font-size: 16px;   
+}
+.header__menu-item a{
+    color: white;
+    text-decoration: none; 
+}
+.header__menu-item a:hover{
+    color: #8400cd;
+}
+.header__menu-item.active{
+    text-decoration: underline;
+}
+
+
+
+
+
+/***INICIO ***/
+/* VIDEO */
+.video__inframe{
+    width: 100%;
+    height: 800px;
+    border-bottom: 2px solid #8400cd;
+}
+ 
+/* IMAGENES */
+.imagenes{
+    border-bottom: 2px solid #8400cd;
+    background-color: black;
+    max-width: 100%;
+    
+}
+.imgs{
+    height: 290px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+/* PESTAÑA CONTACTO */
+
+/* Titulos y subtitulos */
+.titulos{
+    background-image: url("../assets/fondo.png");
+    padding: 100px;
+    border-bottom: 2px solid #8400cd;
+}
+.titulos__contacto{
+    color: white;
+    text-align: center;
+    font-family: draco;
+    font-size: 40px;
+    margin-left: 550px;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+.titulos__contacto-subtitulo{
+    color: white;
+    text-align: center;
+    font-family: Rotunda;
+    font-size: 30px;
+    margin-left: 550px;
+    background-color: transparent;
+}
+
+/* BANNER 1 */
+
+.banner1{
+    padding: 50px;
+    border-bottom: 2px solid #8400cd;
+    align-items: center;
+    background-color: black;
+}
+.banner1__mail{
+    font-family: 'Montserrat', sans-serif;
+    font-style: light;
+    display: flex;
+    color: #8400cd;
+    align-items: center;
+    justify-content: center;
+}
+.banner__titulo{
+    color: #8400cd;
+    text-align: center;
+    font-family: Rotunda1;
+    font-style: bold;
+    font-size: 30px;
+}
+.banner1__telefono{
+    font-family: 'Montserrat', sans-serif;
+    font-style: light;
+    display: flex;
+    color: #8400cd;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner2{
+    padding: 50px;
+    border-bottom: 2px solid #8400cd;
+    background-color: black;
+    align-items: center;
+}
+.banner2__titulo{
+    color: #8400cd;
+    text-align: center;
+    font-family: Rotunda1;
+    font-style: bold;
+    font-size: 30px;
+}
+.banner2__mail{
+    font-family: 'Montserrat', sans-serif;
+    font-style: light;
+    display: flex;
+    color: #8400cd;
+    align-items: center;
+    justify-content: center;
+}
+.banner2__telefono{
+    font-family: 'Montserrat', sans-serif;
+    font-style: light;
+    display: flex;
+    color: #8400cd;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Formulario */
+
+/* Titulos del formulario */
+
+.formulario{
+   display: flex;
+    padding: 50px;
+    background-image: url("../assets/backgoundd.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid #8400cd;
+    align-items: center;
+}
+.titulos-formulario{
+    background-color: transparent;
+    color: #8400cd;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+
+}
+.titulos-formulario__epigrafe{
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+.titulos-formulario__titulo{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: transparent;
+}
+.titulos-formulario__subtitulo{
+    font-size: 20px;
+    background-color: transparent;
+}
+.formu{
+    width: 400px;
+    background-color: transparent;
+    padding: 30px;
+    margin: auto;
+    font-family: rotunda;
+    color: white;
+}
+.formu__casilla{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #8400cd;
+}
+.formu__boton{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    background-color: #8400cd;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.formu__boton:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* PESTAÑA NOSOTROS */
+ 
+ /* IMAGEN Y TEXTO */
+
+ .imgytxt{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    background-image:url("../assets/background3.png") ;
+    background-position: center center;
+    width: 100%;
+    height: 358px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid #8400cd;
+
+}
+.imgytxt__contenido{
+    display: flex;
+    color: white;
+}
+.imgytxt__contenido h1{
+    font-size: 24px;
+    font-family: draco;
+    text-decoration: underline #8400cd;
+}
+.imgytxt__contenido h2{
+    font-size: 30px;
+    font-family: rotunda;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.imgytxt__contenido p{
+    font-family: rotunda;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+ /* Video Nosotros */
+
+ .videonosotros{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    background-color: black;
+ }
+ .videonosotros-vid{
+    width: 1138px;
+    height: 642px;
+ }
+/* BANNER NOSOTROS */
+.titulodelbanner{
+    text-align: center;
+    color: white;
+    font-family: draco;
+    text-decoration: underline solid 3px #8400cd;
+    font-size: 18px;
+    padding: 80px 0 20px 0;
+    background-color: black;
+}
+ .bannernosotros{
+    width: 100%;
+    height: 358px;
+    color: white;
+    background-image: url("../assets/background4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: rotunda;
+    border-bottom: 2px solid #8400cd;
+ }
+ .div1{
+    width: 270px;
+    height: 300px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+ }
+ .bannernosotros__icons{
+    width: 78px;
+    height: 78px;
+    margin-left: 90px;
+    margin-bottom: 30px;
+ }
+ .bannernosotros__titulo{
+    margin-bottom: 10px;
+    text-decoration: underline solid 2px #8400cd;
+ }
+
+ /* PESTAÑA NOVEDADES */
+
+ /* Titulos */
+.titulos{
+    padding: 50px;
+    border-bottom: 2px solid #8400cd;
+    
+    background-color: transparent;
+}
+.titulos__tituloprincipal{
+    color: white;
+    text-align: center;
+    font-family: draco;
+    font-size: 40px;
+    letter-spacing: 15px;
+    margin-left: 550px;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+
+.titulo__subtitulo1{
+    color: white;
+    text-align: center;
+    font-family: Rotunda;
+    font-size: 25px;
+    margin-left: 550px;
+    background-color: transparent;
+}
+.titulo__subtitulo2{
+    color: white;
+    text-align: center;
+    font-family: Rotunda;
+    font-size: 25px;
+    margin-left: 550px;
+    background-color: transparent;
+}
+
+/* MARCAS */
+
+.marcas{
+    padding: 50px;
+    background-color: black;
+}
+
+.marcas__titulo{
+    color: #8400cd;
+    font-family: rotunda1;
+    text-align: center; 
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.marcas__imagenes{
+    display: flex;
+    justify-content:space-evenly;
+    border-radius: 30px;
+   
+}
+.marca__imagen{
+    border-left: 3px solid #8400cd;
+    border: 3px solid #8400cd;
+    border-radius: 30px;
+}
+
+/* OFERTAS PC */
+.ofertaspc{
+    display: grid;
+    justify-content: space-evenly;
+    padding: 50px;
+    border-bottom: 2px solid #8400cd;
+    background-color: black;
+}
+.ofertaspc__ofertas{
+    display: flex;
+    /* align-items: center; */
+    margin-bottom: 100px;
+}
+.ofertaspc__ofertas-titulo{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #8400cd;
+}
+.ofertaspc__ofertas-imagen{
+    border-radius: 30px;
+}
+.ofertaspc__ofertas-lista{
+    color: white;
+    font-family: rotunda;
+    font-size: 25px;
+    padding: 20px;
+}
+.componentes{
+    margin-bottom: 27px;
+}
+
+
+
+
+
+/* PESTAÑA TIENDA */
+.tienda{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+    padding-top: 70px;
+}
+.card__nombres{
+    color: black;
+    font-family: rotunda;
+    margin: 20px 0 30px 30px;
+}
+.card{
+    display: flex;
+    width: 700px;
+    height: 200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px #8400cd;
+    position: relative;
+    margin-bottom: 50px;
+    margin-left: 200px;
+}
+.card__buy{
+    background-color: #262427fd;
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 15px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: draco;
+    font-weight: bold;
+    font-size: 13px;
+    position: absolute;
+    bottom: 20px;
+    left: 400px;
+}
+.card__desplegable{
+    width: 50px;
+    height: 35px;
+    font-family: rotunda;
+    font-size: 15px;
+    color: white;
+    background-color: #262427fd;
+    padding: 5px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 210px;
+}
+
+/* DESPLEGABLES */
+
+.desplegable{
+    font-family: rotunda;
+    font-size: 15px;
+    color: white;
+    background-color: #262427fd;
+    padding: 20px; 
+    width: 350px;
+    left: 0;
+}
+.desplegable:hover{
+    text-decoration: underline;
+    box-shadow: #8400cd 1.95px 1.95px 2.6px;
+}
+.categorias{
+    position: absolute;
+    left: 0;
+}
+/* Boton Novedades */
+
+.boton{
+    background-color: #8400cd;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: draco;
+    font-weight: bold;
+    font-size: 16px;
+    max-width: 500px;
+    margin: 30px;
+} 
+
+
+/* FOOTER */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    max-width: 100%;
+    padding: 50px 0 50px 30px;
+    border-bottom: 2px solid #8400cd;
+    font-family:Rotunda ;
+    font-style: light;
+    color:#8400cd ; 
+}
+
+/* FOOTER PRINCIPAL */
+.footer__footerperifericwar{
+    margin-left: 100px;
+}
+.footer__footerperifericwar-titulo{
+    color: white;
+    font-family: Draco;
+    font-size: 9px;
+    margin-bottom: 30px;
+}
+.footer__footerperifericwar-lista-item{
+    font-family:Rotunda ;
+    font: light;
+    margin: 20px 20px 0px 0px;
+}
+.footer__footerperifericwar-lista-item a{
+    text-decoration: none;
+    color: #8400cd;
+}
+.footer__footerperifericwar-copy{
+    font-size: 13px;
+    margin-top:100px ;
+}
+
+/* CONTACTO Y SOPORTE */
+
+.footer__cys-titulo{
+    color: white;
+    font-family: Draco;
+    font-size: 9px;
+    margin-bottom: 30px; 
+}
+
+/* CYS TELEFONO */
+
+.footer__cys-telefono{
+    display: flex;
+    align-items: center;
+}
+
+
+/* CYS CONTACTO */
+
+.footer__cys-contacto{
+    display: flex;
+    align-items: center;
+}
+
+
+/* NOSOTROS */
+
+.footer__cys-nosotros{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.footer__cys-nosotros-titulo{
+    font-family:Rotunda ;
+    font: light;
+    color:#8400cd ;
+}
+
+
+/* SEGUINOS */
+
+.footer__seguinos{
+    padding: 0px 0 50px 30px;
+    margin-right: 150px;
+}
+.footer__seguinos-titulo{
+    color: white;
+    font-family: Draco;
+    font-size: 9px;
+    margin-bottom: 30px; 
+}
+
+@media(max-width:1820px){
+    .imagenes{
+        display: grid;
+        align-items: center;
+        border: 2px #8400cd;
+        padding: 20px;
+        grid-template-columns: repeat(3,1fr )
+    }
+    .imagenes a {
+        display: flex;
+        justify-content: center;
+    }
+    .video__inframe{
+        display: flex;
+        justify-content: center;
+        padding: 100px;
+        background-color: black;
+    }
+}
+
+@media(max-width:1300px){
+    .titulos{
+        background-image: url("../assets/backgoundd.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .titulos__contacto{
+        color: white;
+        text-align: center;
+        font-family: draco;
+        font-size: 40px;
+        margin-bottom: 15px;
+        background-color: transparent;
+        margin: auto;
+    }
+    .titulos__contacto-subtitulo{
+        color: white;
+        text-align: center;
+        font-family: Rotunda;
+        font-size: 30px;
+        background-color: transparent;
+        margin: auto;
+    }
+}
+
+@media(max-width:1050px){
+    .footer{
+        display: grid;
+        padding: auto;
+        margin: auto;
+        grid-template-columns: repeat(1,1fr )
+        
+    }
+    .footer__footerperifericwar{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+        margin: auto;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #8400cd;
+        grid-template-columns: repeat(1,1fr )
+        
+        
+    }
+    .footer__footerperifericwar-titulo{
+        text-align: center;
+    }
+    .footer__footerperifericwar-lista{
+        display: grid;
+        justify-content: center;
+    }
+    .footer__cys{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        align-items: center;
+        padding: auto;
+        margin: auto;
+        grid-template-columns: repeat(1,1fr )
+    }
+    .footer__footerperifericwar-copy{
+       margin-top: 50px;
+       margin-bottom: 30px;
+    }
+    .footer__cys-titulo{
+        text-align: center;
+    }
+    .footer__cys-telefono{
+        display: grid;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    .footer__cys-telefono-item{
+       margin-left: 25px;
+    }
+    .footer__cys-contacto{
+        display: grid;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    .footer__cys-contacto-item{
+        margin-left: 15px;
+    }
+    .footer__cys-nosotros{
+        display: grid;
+        justify-content: center;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #8400cd;
+    }
+    .footer__cys-nosotros-item{
+        margin-left: 20px;
+    }
+    .footer__seguinos{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        align-items: center;
+        padding: auto;
+        margin: auto;
+        grid-template-columns: repeat(1,1fr )
+    }
+}
+
+
+
+@media(max-width:925px){
+    .imagenes{
+        display: grid;
+        align-items: center;
+        border: 2px #8400cd;
+        padding: 20px;
+        grid-template-columns: repeat(2,1fr )
+    }
+    .imagenes a {
+        display: flex;
+        justify-content: center;
+    }
+    .video__inframe{
+        display: flex;
+        justify-content: center;
+        padding: auto;
+        background-color: black;
+    }
+    .footer__seguinos-item{
+        margin-left: 15px;
+    }
+    .formulario{
+        display: grid;
+         padding: 50px;
+         background-image: url("../assets/backgoundd.jpg");
+         background-size: cover;
+         background-position: center;
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+         border-bottom: 2px solid #8400cd;
+         align-items: center;
+     }
+     .titulos-formulario{
+        background-color: transparent;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        padding: 20px;
+        text-align: center;
+    
+    }
+    .titulos-formulario__epigrafe{
+        font-size: 20px;
+        margin-bottom: 10px;
+        background-color: transparent;
+    }
+    .titulos-formulario__titulo{
+        font-size: 50px;
+        margin-bottom: 10px;
+        color: #8400cd;
+        background-color: transparent;
+    }
+    .titulos-formulario__subtitulo{
+        font-size: 20px;
+        background-color: transparent;
+        color: white;
+        
+    }
+}
+
+@media (max-width:900px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: auto;
+    }
+    .header__logo{
+        padding: auto;
+        margin: auto;
+        /* margin-bottom: 30px; */
+    }
+    .menu{
+        margin: 20px 0 50px 0;
+    }
+}
+@media(max-width:620px){
+    .imagenes{
+        display: grid;
+        align-items: center;
+        border: 2px #8400cd;
+        padding: 20px;
+        grid-template-columns: repeat(1,1fr )
+    }
+    .imagenes a {
+        display: flex;
+        justify-content: center;
+    }
+}
