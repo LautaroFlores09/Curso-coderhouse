@@ -519,6 +519,11 @@ select{
     position: absolute;
     bottom: 20px;
     left: 400px;
+    transition: .3s, .3s;
+}
+.card__buy:hover {
+    transform: scale(1.1);
+    color: #8400cd;
 }
 .card__desplegable{
     width: 50px;
@@ -535,7 +540,6 @@ select{
 }
 
 /* DESPLEGABLES */
-
 .desplegable{
     font-family: rotunda;
     font-size: 15px;
@@ -545,34 +549,14 @@ select{
     width: 350px;
     left: 0;
 }
-
 .desplegable:hover{
     text-decoration: underline;
-    box-shadow: #8400cd 1.95px 0px 0px;
+    box-shadow: #8400cd 1.95px 0 0;
 }
 .categorias{
     position: absolute;
     left: 0;
 }
-/* Boton Novedades */
-
-.boton{
-    background-color: #8400cd;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 15px 0;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: draco;
-    font-weight: bold;
-    font-size: 16px;
-    max-width: 500px;
-    margin: 30px;
-} 
-
 
 /* FOOTER */
 .footer{
