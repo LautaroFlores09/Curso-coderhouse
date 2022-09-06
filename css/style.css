@@ -258,6 +258,10 @@ select{
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid #8400cd;
+    outline: none;
+}
+.formu__casilla:focus{
+    border: 3px solid #8400cd;
 }
 .formu__boton{
     width: 100%;
@@ -269,10 +273,12 @@ select{
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    transition: .3s, .3s;
     
 }
 .formu__boton:hover{
     text-decoration: underline;
+    transform: scale(1.1);
 }
 
 
